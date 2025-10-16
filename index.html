@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kadalesystems - Business Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 0 80px;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.3em;
+            color: #2c3e50;
+        }
+
+        .hero .tagline {
+            font-size: 1.3em;
+            color: #555;
+            margin-bottom: 1em;
+        }
+
+        .hero p {
+            font-size: 1.1em;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 0;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #fff;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            margin-bottom: 1em;
+            text-align: center;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            background-color: #f8f9fa;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+            color: #2c3e50;
+        }
+
+        .project-card p {
+            color: #666;
+            margin-bottom: 1em;
+        }
+
+        .project-tag {
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: #2c3e50;
+            color: #fff;
+            border-radius: 20px;
+            font-size: 0.85em;
+        }
+
+        .project-tag.business {
+            background-color: #3498db;
+        }
+
+        .project-tag.personal {
+            background-color: #2ecc71;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 1.1em;
+            margin-bottom: 1.5em;
+            color: #666;
+        }
+
+        .contact a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.2s;
+        }
+
+        .contact a:hover {
+            color: #2c3e50;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero .tagline {
+                font-size: 1.1em;
+            }
+
+            section {
+                padding: 40px 0;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>kadalesystems</h1>
+            <p class="tagline">Building Digital Solutions</p>
+            <p>Creating innovative projects for personal and business needs. Transforming ideas into reality through thoughtful development and design.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>About</h2>
+            <p>kadalesystems specializes in developing custom projects tailored to both personal and business requirements. With a focus on quality and innovation, we bring your vision to life through careful planning, development, and execution.</p>
+            <p>Whether you're looking for a personal project or a business solution, we work closely with you to deliver results that exceed expectations.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project Name 1</h3>
+                    <p>A brief description of this project and what it accomplishes. Highlight key features and technologies used.</p>
+                    <span class="project-tag business">Business</span>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Project Name 2</h3>
+                    <p>A brief description of this project and what it accomplishes. Highlight key features and technologies used.</p>
+                    <span class="project-tag personal">Personal</span>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Project Name 3</h3>
+                    <p>A brief description of this project and what it accomplishes. Highlight key features and technologies used.</p>
+                    <span class="project-tag business">Business</span>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Project Name 4</h3>
+                    <p>A brief description of this project and what it accomplishes. Highlight key features and technologies used.</p>
+                    <span class="project-tag personal">Personal</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Interested in working together? Get in touch!</p>
+            <p>Email: <a href="mailto:kadalesystems@gmail.com">kadalesystems@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 kadalesystems. All rights reserved.</p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="terms.html">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
+
